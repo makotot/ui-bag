@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "strict": true,
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "lib",
+    "forceConsistentCasingInFileNames": true
+  }
+}
