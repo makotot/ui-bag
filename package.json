@@ -12,7 +12,7 @@
     "build-storybook": "build-storybook -c .storybook -o .out",
     "clean": "rimraf lib",
     "prepublishOnly": "yarn run clean && yarn run build",
-    "build": "babel src --out-dir lib --extensions .ts,.tsx"
+    "build": "tsc && babel src --out-dir lib --extensions .ts,.tsx"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
