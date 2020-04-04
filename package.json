@@ -1,20 +1,20 @@
 {
   "name": "ui-bag",
   "version": "0.1.4",
-  "main": "lib/index.js",
-  "module": "lib/index.esm.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
   "files": [
     "lib/"
   ],
-  "types": "lib/index.d.ts",
+  "types": "lib/types/index.d.ts",
   "license": "MIT",
   "scripts": {
     "sb": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "clean": "rimraf lib",
     "prepublishOnly": "yarn run clean && yarn run build",
-    "build:cjs": "BABEL_ENV=cjs babel src -o lib/index.js --extensions .ts,.tsx",
-    "build:esm": "babel src -o lib/index.esm.js --extensions .ts,.tsx",
+    "build:cjs": "BABEL_ENV=cjs babel src -o lib/cjs/index.js --extensions .ts,.tsx --ignore \"src/**/*.stories.tsx\"",
+    "build:esm": "babel src -o lib/esm/index.js --extensions .ts,.tsx --ignore \"src/**/*.stories.tsx\"",
     "build": "tsc && yarn run build:cjs && yarn run build:esm"
   },
   "devDependencies": {

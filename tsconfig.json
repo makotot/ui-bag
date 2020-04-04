@@ -11,7 +11,7 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "skipLibCheck": true,
-    "outDir": "lib",
+    "outDir": "lib/types",
     "forceConsistentCasingInFileNames": true
   }
 }
